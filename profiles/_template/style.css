@@ -231,6 +231,8 @@ a {
     color: #667586;
 
     font-size: 15px;
+
+    white-space: pre-line;
 }
 
 
