@@ -531,3 +531,70 @@ footer {
         transform: scale(1);
     }
 }
+
+/* ========================================
+   Back Home Button
+======================================== */
+
+.back-home {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 10px 15px;
+
+    background: #003260;
+    color: #ffffff;
+
+    border: 1px solid #e0e4e8;
+    border-radius: 12px;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    box-shadow: 0 8px 25px #00326012;
+
+    transition: 0.2s ease;
+}
+
+.back-home:hover {
+    background: #003260;
+    color: #ffffff;
+    border-color: #003260;
+    transform: translateY(-2px);
+    transform: scale(1.1);
+}
+
+.back-home i {
+    font-size: 13px;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+    .back-home {
+        top: 12px;
+        left: 12px;
+
+        width: 42px;
+        height: 42px;
+
+        padding: 0;
+
+        justify-content: center;
+        border-radius: 50%;
+    }
+
+    .back-home span {
+        display: none;
+    }
+
+    .back-home i {
+        font-size: 15px;
+    }
+}
